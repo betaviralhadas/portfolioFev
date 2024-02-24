@@ -1,0 +1,93 @@
+.content_footer {
+    width: 100%;
+    background: radial-gradient(circle, rgb(42 69 78) 28%, rgb(37 81 86) 51%, rgba(42, 46, 47, 1) 100%);
+    color: white;
+
+    .top_button {
+        position: relative;
+        left: 48%;
+        top: -23px;
+        border-radius: 50%;
+        border: 0 solid;
+        background: rgb(42 69 78);
+        width: 70px;
+        height: 60px;
+        text-align: center;
+
+        @media screen and (max-width:767px) {
+            left: 42%;
+            height: 50px;
+            width: 60px;
+            margin-bottom: -14px;
+            top: -17px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            left: 46%;
+            top: -18px;
+            width: 65px;
+            height: 55px;
+            margin-bottom: -16px;
+        }
+
+        a {
+            color: white;
+            font-size: xx-large;
+        }
+    }
+
+    .top_button:hover {
+        transform: translateY(-7px);
+
+        .top {
+            color: aqua;
+        }
+    }
+
+    .footer_links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        @media screen and (max-width:767px) {
+            gap: 15px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            gap: 15px;
+        }
+
+        a {
+            color: white;
+
+            :hover {
+                font-size: 25px;
+                font-weight: 800;
+
+                @media screen and (max-width:767px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:992px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .footer_text {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 10px;
+
+        @media screen and (max-width:767px) {
+            font-size: 12px;
+            gap: 5px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            font-size: 14px;
+        }
+    }
+}

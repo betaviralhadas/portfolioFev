@@ -1,0 +1,55 @@
+$breakpoints: (
+    mobile: 767px,
+    tablet-min: 768px,
+    tablet-max: 992px,
+    desktop: 1440px,
+);
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (max-width: map-get($breakpoints, tablet-max)) and (min-width: map-get($breakpoints, tablet-min)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+    .skills {
+        align-items: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        animation: defil 10s infinite linear;
+
+        @include mobile-only {
+            margin-left: 4em;
+            width: 35%;
+        }
+
+        .icon_skill {
+            object-fit: contain;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+
+@keyframes defil {
+    0% {
+        transform: translateX(0);
+        /* position initiale à droite */
+    }
+
+    100% {
+        transform: translateX(-520px);
+        /* position finale à gauche */
+    }
+}

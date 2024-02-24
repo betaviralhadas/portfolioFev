@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "image": "/skillsImg/html5.webp"
+    },
+    {
+        "id": 2,
+        "image": "/skillsImg/css.webp"
+    },
+    {
+        "id": 3,
+        "image": "/skillsImg/sass.webp"
+    },
+    {
+        "id": 4,
+        "image": "/skillsImg/javascript.webp"
+    },
+    {
+        "id": 5,
+        "image": "/skillsImg/reactjs.webp"
+    },
+    {
+        "id": 6,
+        "image": "/skillsImg/redux.webp"
+    },
+    {
+        "id": 7,
+        "image": "/skillsImg/seo.webp"
+    },
+    {
+        "id": 8,
+        "image": "/skillsImg/git.webp"
+    },
+    {
+        "id": 9,
+        "image": "/skillsImg/github.webp"
+    },
+    {
+        "id": 10,
+        "image": "/skillsImg/npm.webp"
+    },
+    {
+        "id": 11,
+        "image": "/skillsImg/nodejs.webp"
+    }
+]

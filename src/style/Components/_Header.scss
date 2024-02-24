@@ -1,0 +1,173 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    border-radius: 0 0 15px 15px;
+    background: #262525;
+    align-items: center;
+    position: fixed;
+    width: 97%;
+    z-index: 1100;
+
+    @media screen and (max-width:767px) {
+        height: 29px;
+        width: 90%;
+        padding: 10px 20px 10px 20px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:992px) {
+        width: 95%;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .name_photo {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        @media screen and (max-width:767px) {
+            gap: 10px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            gap: 15px;
+        }
+
+        .profile_photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.1s both;
+
+            @media screen and (max-width:767px) {
+                width: 35px;
+                height: 35px;
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .title {
+            color: white;
+            font-size: 24px;
+
+            @media screen and (max-width:767px) {
+                font-size: 18px;
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .navigation {
+        animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+
+        @media screen and (max-width:767px) {
+            height: 16px;
+            position: absolute;
+        }
+
+        .mobile-menu-button {
+            display: none;
+
+            @media screen and (max-width:767px) {
+                display: flex;
+                justify-content: flex-end;
+                // margin-bottom: 2px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .bars {
+                @media screen and (max-width:767px) {
+                    margin-left: 312px;
+                }
+            }
+
+            .bars:hover {
+                color: aqua;
+            }
+        }
+
+        .nav_ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+                gap: 12px;
+            }
+
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                
+
+                @media screen and (max-width:767px) {
+                    display: block;
+                    font-size: 14px;
+                    border-bottom: 1px solid white;
+                    text-align: center;
+                }
+
+                @media screen and (min-width:768px) and (max-width:992px) {
+                    font-size: 14px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    
+                }
+            }
+
+            li:hover {
+                a {
+                    color: aqua;
+                }
+
+                color: aqua;
+                font-weight: 600;
+                text-shadow: 1px 1px 2px aqua;
+
+                @media screen and (max-width:767px) {
+                    border-bottom: 2px solid aqua;
+                }
+            }
+        }
+
+        .mobile-open {
+            flex-direction: column;
+            background: #262525;
+            gap: 7px;
+            border: 1px solid aqua;
+            border-radius: 5px;
+            margin-top: 15px;
+            padding: 4px 0 4px 0;
+            box-shadow: 4px 5px 19px 3px #45F0FF;
+            width: 354px;
+            margin-left: -13px;
+        }
+    }
+}
+
+
+@keyframes text-focus-in {
+    0% {
+
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

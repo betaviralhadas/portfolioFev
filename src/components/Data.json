@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Booki",
+        "description": "Booki is a travel agency, that wishes to develop a website that allows users to find accommodation and activities, in the city of their choice.",
+        "languages": "To carry out the project, I used HTML5 and CSS3 languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/Booki.git",
+        "coverImage": "/projectsImg/booki.webp",
+        "image": "/projectsImg/booki_2.webp"
+    },
+    {
+        "id": 2,
+        "title": "Ohmyfood",
+        "description": "The OhMyFood platform, wants to develop a “mobile first” site, which lists the menus of gourmet restaurants. In addition to traditional reservation systems, customers will be able to compose the menu for their meal so that the dishes are ready upon their arrival.",
+        "languages": "To carry out the project, I used HTML5 and Sass languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/Ohmyfood.git",
+        "coverImage": "/projectsImg/ohmyfood.webp",
+        "image": "/projectsImg/ohmyfood_2.webp"
+    },
+    {
+        "id": 3,
+        "title": "Print it",
+        "description": "Print it a small family printing company, wants to revitalize its static website by adding a carousel.",
+        "languages": "To carry out the project, I used HTML5, CSS3 and JavaScript languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/costa_elisabete_2_012023.git",
+        "coverImage": "/projectsImg/print_it.webp",
+        "image": "/projectsImg/print_it_2.webp"
+    },
+    {
+        "id": 4,
+        "title": "Sophie Bluel",
+        "description": "Sophie Bluel, an interior designer, wants a dynamic portfolio site.",
+        "languages": "To carry out the project, I used HTML5, CSS3 and JavaScript languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/costa_elisabete_6_repo_github_022023.git",
+        "coverImage": "/projectsImg/architecte_inteerieur.webp",
+        "image": "/projectsImg/architecte_inteerieur_2.webp"
+    },
+    {
+        "id": 5,
+        "title": "Kasa",
+        "description": "Kasa is one of the leaders in private apartment rental in France. The project was to develop its new web platform.",
+        "languages": "To carry out the project, I used JavaScript, React and Sass languages.",
+        "gitHubLink": "https://github.com/betaviralhadas/kasa.git",
+        "coverImage": "/projectsImg/kasa.webp",
+        "image": "/projectsImg/kasa_2.webp"
+    },
+    {
+        "id": 6,
+        "title": "Nina Carducci",
+        "description": "Nina Carducci, a photographer, wants SEO optimization services, to have more visibility for potential clients.",
+        "languages": "To carry out this project, I used the lighthouse and wave tools.",
+        "gitHubLink": "https://github.com/betaviralhadas/ninacarducci.git",
+        "coverImage": "/projectsImg/photographe.webp",
+        "image": "/projectsImg/photographe_2.webp"
+    },
+    {
+        "id": 7,
+        "title": "724events",
+        "description": "The events agency 724events, wants to debug the new version of its showcase site.",
+        "languages": "To carry out this project, I used JavaScript and React languages and the react dev tools.",
+        "gitHubLink": "https://github.com/betaviralhadas/724Events-Debuggez-app-React.JS.git",
+        "coverImage": "/projectsImg/77events.webp",
+        "image": "/projectsImg/77events_2.webp"
+    },
+    {
+        "id": 8,
+        "title": "Argent Bank",
+        "description": "Argent Bank is a new online bank, which wants to break into the banking sector. Wants to set up the user dashboard.",
+        "languages": "To carry out this project, I used JavaScript, React, Redux and CSS.",
+        "gitHubLink": "https://github.com/betaviralhadas/argentbankfront.git",
+        "coverImage": "/projectsImg/argent_bank.webp",
+        "image": "/projectsImg/argent_bank_2.webp"
+    }
+]

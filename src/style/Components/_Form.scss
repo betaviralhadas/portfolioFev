@@ -1,0 +1,252 @@
+:root {
+  --main-color: aqua;
+}
+
+.contact {
+  margin: 45px 0 56px 0;
+  padding-top: 20px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(46, 46, 54, 1) 10%, rgba(29 195 233) 52%, rgba(46, 46, 54, 1) 87%);
+
+  .form_title {
+    margin-left: 131px;
+    font-size: 36px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), #a9d2e8);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -35rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+    position: relative;
+    width: 34.8rem;
+
+    @media screen and (max-width:767px) {
+      width: 300px;
+      margin-left: 75px;
+      font-size: 26px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:992px) {
+      margin-left: 66px;
+      font-size: 32px;
+    }
+  }
+
+  .form_title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
+  }
+
+  .form_subtitle {
+    margin-left: 179px;
+    color: #e4efef;
+    font-size: 24px;
+
+    @media screen and (max-width:767px) {
+      margin-left: 92px;
+      font-size: 18px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:992px) {
+      margin-left: 132px;
+      font-size: 22px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 35px;
+
+    .form_fields {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      color: #e4efef;
+      font-weight: 600;
+      font-size: 18px;
+
+      @media screen and (max-width:767px) {
+        font-size: 14px;
+        width: 45%
+      }
+
+      @media screen and (min-width:768px) and (max-width:992px) {
+        font-size: 16px;
+      }
+
+      input {
+        border-radius: 6px;
+        height: 20px;
+        border: 0;
+
+        @media screen and (max-width:767px) {
+          height: 18px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+          height: 18px;
+        }
+      }
+
+      input:hover {
+        font-size: 16px;
+      }
+
+      .error_name,
+      .error_email {
+        color: red;
+        font-size: 14px;
+        font-weight: 600;
+
+        @media screen and (max-width:767px) {
+          font-size: 12px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .form_message_field {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      color: #e4efef;
+      font-weight: 600;
+      font-size: 18px;
+
+      @media screen and (max-width:767px) {
+        font-size: 16px;
+        width: 45%
+      }
+
+      @media screen and (min-width:768px) and (max-width:992px) {
+        font-size: 16px;
+      }
+
+      .message {
+        border-radius: 6px;
+        height: 100px;
+      }
+
+      .message:hover {
+        font-size: 16px;
+      }
+
+      .error_message {
+        color: red;
+        font-size: 14px;
+        font-weight: 500;
+
+        @media screen and (max-width:767px) {
+          font-size: 12px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+
+      @media screen and (max-width:767px) {
+        gap: 10px;
+      }
+
+      @media screen and (min-width:768px) and (max-width:992px) {
+        gap: 15px;
+      }
+
+      .button {
+        cursor: pointer;
+        width: 76px;
+        border-radius: 8px;
+        margin-top: 20px;
+        background: aqua;
+        padding: 4px;
+        border: 1px solid aqua;
+        color: #e4efef;
+        font-weight: 600;
+        font-size: 18px;
+
+        @media screen and (max-width:767px) {
+          width: 56px;
+          margin-top: 5px;
+          padding: 2px;
+          font-size: 14px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+          font-size: 16px;
+          width: 70px;
+          padding: 2px;
+        }
+      }
+
+      .button:hover {
+        box-shadow: 3px 3px 3px aqua;
+        background-color: aqua;
+        width: 70px;
+        font-weight: 800;
+        font-size: 18px;
+
+        @media screen and (max-width:767px) {
+          width: 65px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes homeCursorText {
+
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  75%,
+  81% {
+    opacity: 0;
+  }
+}
+
+@keyframes homeBgText {
+
+  0%,
+  10%,
+  100% {
+    background-position: -35rem 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}

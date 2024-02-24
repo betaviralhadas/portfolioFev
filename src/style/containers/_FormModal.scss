@@ -1,0 +1,57 @@
+.form_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     // pointer-events: none; /* impede a interação com o conteúdo do site */
+
+    .modal_form {
+        z-index: 1;
+        position: absolute;
+        background: #262525;
+        width: 408px;
+        height: 60px;
+        border-radius: 15px;
+        border: 1px solid #0be50f;
+        left: 50%;
+        bottom: 160px;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 18px 14px 5px rgba(14, 206, 69, 0.63);
+
+        @media screen and (max-width:767px) {
+            width: 256px;
+            bottom: 7px;
+            height: 53px;
+        }
+
+        .close_modal {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: 0 solid;
+            background: #262525;
+            font-size: unset;
+            color: white;
+
+            @media screen and (max-width:767px) {
+                font-size: 14px;
+                top: 6px;
+                right: 6px;
+            }
+        }
+
+        .close_modal:hover {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        
+    }
+}
