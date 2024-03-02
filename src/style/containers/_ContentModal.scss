@@ -29,7 +29,7 @@
         // position: absolute;
         //  width: 652px;
         // border-radius: 15px;
-        top: 2em;
+        top: 1.5em;
         left: 0;
         // transform: translate(-50%, -50%);
         //  border: 1px solid aqua;
@@ -44,18 +44,19 @@
         animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 
         @media screen and (max-width:767px) {
-            width: 332px;
-            left: 21px;
+          //  width: 332px;
+            width: auto;
+            left: 24px;
         }
 
         .content {
             position: relative;
             /* overflow: hidden; */
             //background: white;
-            min-width: 300px;
-            min-height: 100px;
+           // min-width: 300px;
+           // min-height: 100px;
             border-radius: 7px;
-
+            height: auto;
             border: 1px solid aqua;
             box-shadow: -2px 2px 26px cyan;
             background: #253c3e;
@@ -105,7 +106,7 @@
                         border-radius: 5px;
                         position: relative;
                         left: 5%;
-                        bottom: -23px;
+                        bottom: -18px;
                     }
                 }
 
@@ -115,10 +116,10 @@
                     //  color: darkslategrey;
                     color: white;
                     text-align: center;
-                    margin-top: 1em;
+                   // margin-top: 1em;
 
                     @media screen and (max-width:767px) {
-                        margin-top: 5px;
+                       // margin-top: 5px;
                     }
 
                     h2 {
@@ -134,12 +135,12 @@
                     }
 
                     .description_text {
-                        width: 75%;
+                        width: 80%;
                         place-self: center;
                         text-align: center;
                         line-height: 26px;
                         font-size: 16px;
-                        margin: 0 0.5em;
+                       // margin: 0 0.5em;
 
                         @media screen and (max-width:767px) {
                             line-height: 22px;
@@ -167,10 +168,10 @@
 
                         @media screen and (max-width:767px) {
                             font-size: 14px;
-                            width: 99px;
+                            width: 102px;
                             height: 32px;
                             place-self: center;
-                            margin-top: 11px;
+                            margin-top: 6px;
                         }
 
                         @media screen and (min-width:768px) and (max-width:992px) {
