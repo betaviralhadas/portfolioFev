@@ -25,8 +25,8 @@ const Portfolio = () => {
             {
                 opacity: 1,
                 y: 0,
-                delay: delay || 1.8,
-                duration: duration || 0.6,
+                delay: delay || 1,
+                duration: duration || 0.3,
                 scrollTrigger: {
                     trigger: elem,
                     start: "top center",
@@ -79,7 +79,7 @@ const Portfolio = () => {
         sliderInLeft(".projects")
     }, [])
 
-    const Fadeup = batch(Fade(), Sticky(), Move())
+    const Fadeup = batch(Fade(), Sticky(), MoveOut(0,-200))
 
     
 

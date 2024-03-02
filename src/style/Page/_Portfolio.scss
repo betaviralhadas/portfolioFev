@@ -1,6 +1,10 @@
 #root {
     font-family: 'Montserrat', sans-serif;
     background: #262525;
+
+    @media screen and (max-width:321px) {
+        width: 72.3vh;
+    }
 }
 
 #about_me {
