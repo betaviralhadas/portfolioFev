@@ -58,7 +58,6 @@ const Slider = () => {
           slidesToSlide={1}
           swipeable
         >
-
           {data.map(item => (
             <div className="skills" key={item.id}>
               <img className="icon_skill" src={item.image} alt="skills" />

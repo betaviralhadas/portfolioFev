@@ -47,7 +47,7 @@ const Form = ({ onSuccess }) => {
             document.querySelector(".error_name").innerHTML = "";
             document.querySelector(".error_email").innerHTML = "";
             document.querySelector(".error_message").innerHTML = "";
-          }, 1500); // 1500 milissegundos = 1.5 segundos de atraso,para limpar os dados dos campos do form apos envio
+          }, 1500); //1.5 segundos de atraso,para limpar os dados dos campos do form apos envio
         })
         .catch((error) => {
           console.log(error.text);
@@ -63,7 +63,6 @@ const Form = ({ onSuccess }) => {
         <div className="form_fields">
           <label htmlFor="name">Name</label>
           <input
-            // className="form_control"
             id="name"
             type="text"
             name="name"
@@ -99,8 +98,6 @@ const Form = ({ onSuccess }) => {
           />
           <span className="error_message"></span>
         </div>
-
-
         <div className="buttons">
           <button className="button" type="submit">
             Send

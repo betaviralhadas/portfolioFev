@@ -2,13 +2,15 @@
     padding: 45px 0 45px 0;
     display: flex;
     justify-content: center;
-   // margin: 20px;
-   //margin-top: 500px;
 
     @media screen and (max-width:767px) {
         flex-direction: column-reverse;
         align-items: center;
         margin: 0;
+    }
+
+    @media screen and (min-width:768px) and (max-width:992px) {
+        width: 43em;
     }
 
     .collapse-header {
@@ -58,6 +60,4 @@
         margin-left: -139px;
         gap: 54px;
     }
-
-    .collapse-content {}
 }

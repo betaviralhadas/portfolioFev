@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import profilePhoto from "../Img/beta.webp";
 import '../style/Components/_Header.scss';
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 
 const Header = () => {
-
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -13,9 +12,9 @@ const Header = () => {
 
     const closeMobileMenu = () => { //para fechar menu ao clicar no item
         setMobileMenuOpen(false);
-      };
+    };
 
-      useEffect(() => {
+    useEffect(() => {
         const closeMenuOnOutsideClick = (e) => {
             if (isMobileMenuOpen && !e.target.closest('.header')) {
                 setMobileMenuOpen(false);
@@ -40,29 +39,29 @@ const Header = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
-    const onLoad = ()=>{
+    const onLoad = () => {
         gsap.timeline().fromTo(".letter",
-        {
-            x:-100,
-            opacity:0,
-        },
-        {
-            x:0,
-            opacity:1,
-            delay:0.1,
-            stagger:0.1,
-        }
+            {
+                x: -100,
+                opacity: 0,
+            },
+            {
+                x: 0,
+                opacity: 1,
+                delay: 0.1,
+                stagger: 0.1,
+            }
         )
-        .to(".letter", {
-            margin: "0.7 vw",
-            delay: 0.1,
-            duration: 0.2,
-        })
+            .to(".letter", {
+                margin: "0.7 vw",
+                delay: 0.1,
+                duration: 0.2,
+            })
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         onLoad()
-    },[])
+    }, [])
 
     return (
         <section className="header">
@@ -108,7 +107,6 @@ const Header = () => {
                         <li><a href="#contact" title="contact" onClick={closeMobileMenu}>Contact</a></li>
                     </ul>
                 )}
-
                 {window.innerWidth > 767 && !isMobileMenuOpen && (
                     <ul className={`nav_ul ${isMobileMenuOpen ? '' : ''}`}>
                         <li><a href="#about_me" title="about">About</a></li>

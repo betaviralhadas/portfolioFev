@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-     // pointer-events: none; /* impede a interação com o conteúdo do site */
 
     .modal_form {
         z-index: 1;
@@ -51,7 +50,5 @@
             font-weight: 700;
             font-size: 18px;
         }
-
-        
     }
 }

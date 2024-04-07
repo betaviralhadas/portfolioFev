@@ -23,7 +23,7 @@ const Footer = () => {
             </article>
             <article className="footer_text">
                 <i className="fa-regular fa-copyright"></i>
-                <p>Copyright 2023. Made by Elisabete Viralhadas</p>
+                <p>Copyright 2024. Made by Elisabete Viralhadas</p>
             </article>
         </div>
     )

@@ -23,24 +23,23 @@ $breakpoints: (
     }
 }
 
-    .skills {
-        align-items: center;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        animation: defil 10s infinite linear;
+.skills {
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    animation: defil 10s infinite linear;
 
-        @include mobile-only {
-            margin-left: 4em;
-            width: 35%;
-        }
-
-        .icon_skill {
-            object-fit: contain;
-            width: 100px;
-            height: 100px;
-        }
+    @include mobile-only {
+        margin-left: 4em;
+        width: 35%;
     }
 
+    .icon_skill {
+        object-fit: contain;
+        width: 100px;
+        height: 100px;
+    }
+}
 
 @keyframes defil {
     0% {
