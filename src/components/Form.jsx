@@ -32,7 +32,7 @@ const Form = ({ onSuccess }) => {
     } else {
       await emailJs
         .sendForm(
-          "service_worocef",
+          "service_8ac0u1o",
           "template_9bspzc6",
           form_send.current,
           "uC0mcFhJ6_FUtSOMY"
