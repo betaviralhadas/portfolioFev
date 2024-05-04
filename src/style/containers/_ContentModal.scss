@@ -110,7 +110,7 @@
                     }
 
                     .description_text {
-                        width: 80%;
+                        width: 84%;
                         place-self: center;
                         text-align: center;
                         line-height: 24px;
@@ -120,12 +120,12 @@
                             line-height: 22px;
                             font-size: 12px;
                             text-align: center;
-                            width: 102%;
+                            width: 98%;
                         }
 
                         @media screen and (min-width:768px) and (max-width:992px) {
                             font-size: 14px;
-                            width: 89%;
+                            width: 72%;
                             line-height: 22px;
                         }
                     }
