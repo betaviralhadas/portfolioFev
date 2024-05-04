@@ -21,6 +21,7 @@
         @media screen and (max-width:767px) {
             width: auto;
             left: 24px;
+            top: 3em;
         }
 
         .content {
@@ -96,6 +97,8 @@
 
                     h2 {
                         place-self: center;
+                        margin-top: 5px;
+                        margin-bottom: 3px;
 
                         @media screen and (max-width:767px) {
                             font-size: 16px;
@@ -110,7 +113,7 @@
                         width: 80%;
                         place-self: center;
                         text-align: center;
-                        line-height: 26px;
+                        line-height: 24px;
                         font-size: 16px;
 
                         @media screen and (max-width:767px) {
