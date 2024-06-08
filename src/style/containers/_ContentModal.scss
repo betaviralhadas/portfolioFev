@@ -53,7 +53,6 @@
                 font-size: 18px;
             }
 
-
             .modal_content {
                 overflow: hidden;
                 width: 706px;
@@ -86,10 +85,6 @@
                     padding: 22px;
                     color: white;
                     text-align: center;
-
-                    @media screen and (max-width:767px) {
-                        // margin-top: 5px;
-                    }
 
                     @media screen and (min-width:768px) and (max-width:992px) {
                         padding: 14px;
