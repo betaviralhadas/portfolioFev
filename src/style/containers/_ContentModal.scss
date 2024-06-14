@@ -15,12 +15,9 @@
         justify-content: center;
         align-items: center;
         top: 1.5em;
-        left: 0;
         animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 
         @media screen and (max-width:767px) {
-            width: auto;
-            left: 24px;
             top: 3em;
         }
 
